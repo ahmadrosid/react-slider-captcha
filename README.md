@@ -1,7 +1,10 @@
 # React Slider Captcha
 
-Small port of [SliderCaptcha](https://github.com/ArgoZhang/SliderCaptcha)
+Simple React Slider Captcha
+
+[See demo](https://ahmadrosid.github.io/react-slider-captcha/)
 
 ![demo](./demo.png)
 
-[See demo](https://ahmadrosid.github.io/react-slider-captcha/)
+Credits:
+-  [SliderCaptcha](https://github.com/ArgoZhang/SliderCaptcha)
