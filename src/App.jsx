@@ -1,13 +1,19 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import './App.css'
-import { useEffect } from 'react';
 import "./lib/sliderCaptcha";
 
 function App() {
   const ref = useRef();
   const captcha = useRef();
+  const [keyRender, resetKeyRender] = useState(0);
 
-  useEffect(() => {
+  const toggleCatpcha = () => {
+    if (captcha.current) {
+      captcha.current = null;
+      resetKeyRender(prev => prev+1);
+      return;
+    }
+
     if (ref.current && !captcha.current) {
       captcha.current = window.sliderCaptcha(
         {
@@ -24,12 +30,14 @@ function App() {
             },
         })
     }
-  }, []);
-  
+  }
+
   return (
     <>
-      <div ref={ref}></div>
-      <p>Slider captcha</p>
+      <div key={keyRender} ref={ref}></div>
+      <div className='card'>
+        <button onClick={toggleCatpcha}>Toggle Captcha</button>
+      </div>
     </>
   )
 }
