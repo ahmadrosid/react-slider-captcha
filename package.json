@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://ahmadrosid.github.io/react-slider-captcha/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,8 +11,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@caesar003/slider-captcha-react": "^1.0.0",
-    "@rosid/slider-captcha-react": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -23,6 +22,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "gh-pages": "^6.1.0",
     "vite": "^5.0.0"
   }
 }
