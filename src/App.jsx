@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.css'
-import "./lib/sliderCaptcha";
+import "./lib/slidercaptcha";
 
 function App() {
   const ref = useRef();
